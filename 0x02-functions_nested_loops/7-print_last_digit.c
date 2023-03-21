@@ -1,10 +1,8 @@
 #include "main.h"
 
 /**
- * print_last_digit - the main function
- *
- * @i: this is the parameter
- *
+ * print_last_digit - this is the main function
+ * @i: this is a parameter
  * Return: always 0
  */
 
@@ -15,5 +13,7 @@ int print_last_digit(int i)
 	k = i % 10;
 	if (i < 0)
 		k = -k;
+	_putchar(k + '0');
 	return (k);
 }
+
